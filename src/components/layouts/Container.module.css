@@ -1,0 +1,22 @@
+.container{
+    max-width: 120rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    flex-wrap: wrap;
+}
+
+.min-height {
+    min-height: 75%;
+}
+
+.start{
+    justify-content: flex-start;
+}
+
+.collum {
+    flex-direction: column;
+    justify-content: flex-start;
+}

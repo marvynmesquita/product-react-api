@@ -1,0 +1,18 @@
+.homeSection{
+    
+}
+
+.homeSection div {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    padding-top: 5rem;
+}
+
+.homeSection ul {
+    padding-bottom: 5rem;
+}
+
+.homeSection ul li{
+    
+    font-size: 1.7rem;
+}
