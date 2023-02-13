@@ -3,9 +3,9 @@ import {useEffect, useState} from 'react'
 import Input from "./Input"
 import SubmitButton from "./SubmitButton"
 
-function ProductForm({handleSubmit ,productData}) {
+function ProductForm({handleSubmit }) {
 
-    const [product, setProduct] = useState([productData])
+    const [product, setProduct] = useState([])
 
     const submit = (e) => {
         e.preventDefault()

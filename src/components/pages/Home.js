@@ -2,6 +2,8 @@ import styles from './Home.module.css'
 import { useEffect, useState } from 'react'
 import Container from '../layouts/Container'
 
+import DeleteBtn from '../update/DeleteBtn'
+
 function Home() {
 
     const [product, setProduct]= useState([])
@@ -37,7 +39,7 @@ function Home() {
                                 <li>Estoque mínimo: {item.minimum_stock}</li>
                                 <li>Qualidade: {item.quality}</li>
                                 <li>Validade: {item.validate}</li>
-                                
+                                <DeleteBtn id={item._id}/>
                             </ul>
                         )
                     })
