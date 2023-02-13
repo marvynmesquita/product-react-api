@@ -22,7 +22,7 @@ function Home() {
    
 
     useEffect(() => {
-        fetch("http://localhost:5000/product", {
+        fetch("http://ec2-18-230-76-165.sa-east-1.compute.amazonaws.com:5000/product", {
             method: "GET", 
             headers:  {
                 'Content-Type': 'application/json'
@@ -86,7 +86,7 @@ function Home() {
     }
 
     function atualizarProduto(produtoAtt, Id){
-        fetch(`http://localhost:5000/product/${Id}`, {
+        fetch(`http://ec2-18-230-76-165.sa-east-1.compute.amazonaws.com:5000/product/${Id}`, {
             method: "PATCH", 
             headers:  {
                 'Content-Type': 'application/json'

@@ -12,7 +12,7 @@ function Newproduct() {
 
         
 
-        fetch("http://localhost:5000/product", {
+        fetch("http://ec2-18-230-76-165.sa-east-1.compute.amazonaws.com:5000/product", {
             method: "POST",
             headers: {
                 'Content-Type':'application/json'

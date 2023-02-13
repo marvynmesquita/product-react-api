@@ -9,7 +9,7 @@ function DeleteBtn(id) {
     
 
      function deleteProduct(){
-         fetch(`http://localhost:5000/product/${productId[0]}`, {
+         fetch(`http://ec2-18-230-76-165.sa-east-1.compute.amazonaws.com:5000/product/${productId[0]}`, {
             method: "Delete", 
             headers:  {
                 'Content-Type': 'application/json'
