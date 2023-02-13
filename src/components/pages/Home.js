@@ -34,7 +34,7 @@ function Home() {
                         return (
                             <ul>
                                 <li>Nome: {item.name}</li>
-                                <li>Preço: {item.price}</li>
+                                <li>Preço: R${item.price}</li>
                                 <li>Codigo de barras: {item.code}</li>
                                 <li>Quantidade no estoque: {item.quantity}</li>
                                 <li>Estoque mínimo: {item.minimum_stock}</li>
