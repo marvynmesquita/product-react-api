@@ -10,9 +10,9 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <Navbar/>
           <Routes>
-              <Route exact path="/" element={<Home />} > </Route>
-              <Route exact path="/newproduct" element={<Newproduct />} > </Route>
-              <Route exact path="/updateproduct" element={<Updateproduct />} > </Route>
+              <Route exact path="./" element={<Home />} > </Route>
+              <Route exact path="./newproduct" element={<Newproduct />} > </Route>
+              <Route exact path="./updateproduct" element={<Updateproduct />} > </Route>
           </Routes>
     </Router>
   )
