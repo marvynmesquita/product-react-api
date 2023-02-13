@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import Container from '../layouts/Container'
 
 import DeleteBtn from '../update/DeleteBtn'
+import UpdateBtn from '../update/UpdateBtn'
 
 function Home() {
 
@@ -39,6 +40,7 @@ function Home() {
                                 <li>Estoque mínimo: {item.minimum_stock}</li>
                                 <li>Qualidade: {item.quality}</li>
                                 <li>Validade: {item.validate}</li>
+                                <UpdateBtn id={item._id}/>
                                 <DeleteBtn id={item._id}/>
                             </ul>
                         )

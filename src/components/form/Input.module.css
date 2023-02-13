@@ -1,0 +1,15 @@
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputDiv label{
+font-size: 1.5rem;
+padding-bottom: 1rem;
+padding-top: 1rem;
+
+}
+
+.inputDiv input{
+    font-size: 1.5rem;
+}

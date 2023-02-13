@@ -5,10 +5,21 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-
+  color: black;
 }
 
 
 html{
   font-size: 62.5%;
+}
+
+
+button{
+  padding: 0.5rem 1rem;
+  background-color: rgb(224, 226, 115);
+  cursor: pointer;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+
 }

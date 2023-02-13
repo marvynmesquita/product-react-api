@@ -19,9 +19,7 @@ function Navbar() {
                     <li className={styles.item}>
                         <Link to="/newproduct">Adicinonar Produto</Link>
                     </li>
-                    <li className={styles.item}>
-                        <Link to="/updateproduct">Atualizar Produto</Link>
-                    </li>
+                    
                 </ul>
             </Container>
         </nav>

@@ -1,7 +1,12 @@
 import ProductForm from "../form/ProductForm"
 import Container from "../layouts/Container"
+import styles from './Newproduct.module.css'
+import { useNavigate} from 'react-router-dom'
 
 function Newproduct() {
+
+    const history = useNavigate()
+
 
     function createPost(product) {
 
@@ -17,19 +22,24 @@ function Newproduct() {
         .then(res => res.json())
         .then((data) => {
             console.log(data)
-
+            history('/', {message: 'Produto criado com sucesso!'})
         })
         .catch(err => console.log(err))
     }
 
     return(
-        <Container>
-            <div >
-                <h1>Criar Projeto</h1>
-                <p>Crie seu projeto para depois adicionar os serviços</p>
-                <ProductForm handleSubmit={createPost} />
-            </div>
-        </Container>
+        <div className={styles.criarProjeto}>
+            <Container>
+                <div className={styles.formContainer} >
+                    <div className={styles.title}>
+                        <h1>Criar Projeto</h1>
+                        <p>Crie seu projeto para depois adicionar os serviços</p>
+
+                    </div>
+                    <ProductForm handleSubmit={createPost} />
+                </div>
+            </Container>
+        </div>
 
     )
     
